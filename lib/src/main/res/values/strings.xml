@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- string resources re-ordered by AndroidXmlSorter https://plugins.jetbrains.com/plugin/8223-androidxmlsorter --><resources>
+    <string name="add_account_button_label">Add account</string>
+
+    <string name="choose">Choose</string>
+
+    <string name="engine_process_name" translatable="false">:x</string>
+
+    <string name="keep_service_damon_noti_text">Get Removed</string>
+    <string name="keep_service_damon_noti_text_v24">Keep app alive to receive new messages on time</string>
+    <string name="keep_service_damon_noti_title">Tip: Message Should Be Hidden</string>
+    <string name="keep_service_damon_noti_title_v24">Running…</string>
+    <string name="keep_service_noti_text">Remove Service Notification</string>
+    <string name="keep_service_noti_title">Remove Service Notification</string>
+
+    <string name="noApplications">No find applications</string>
+
+    <string name="owner_name">Admin</string>
+
+    <string name="apk_file_does_not_exists_please_provide_valid_file_path">Apk file does not exists, please provide valid file path.</string>
+    <string name="broken_apk_file_please_select_another_apk_file">Broken apk file, please select another apk file to install.</string>
+    <string name="not_allowed_to_update_package">Not allowed to update the package.</string>
+    <string name="please_provide_apk_file_path">path = NULL, please provide apk file path.</string>
+    <string name="unable_to_copy_package_file">Unable to copy the package file.</string>
+    <string name="virtual_core_x64_engine_not_installed">64bit engine not installed.</string>
+
+    <string name="virtual_installer">VirtualPackage Installer</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- string resources re-ordered by AndroidXmlSorter https://plugins.jetbrains.com/plugin/8223-androidxmlsorter --><resources>
+    <string name="add_account_button_label">添加账号</string>
+
+    <string name="choose">选择</string>
+
+    <string name="keep_service_damon_noti_text">消失</string>
+    <string name="keep_service_damon_noti_text_v24">保持应用后台运行，能够及时接收消息</string>
+    <string name="keep_service_damon_noti_title">提示: 消息应该是隐藏的</string>
+    <string name="keep_service_damon_noti_title_v24">后台运行中</string>
+    <string name="keep_service_noti_text">移除服务通知</string>
+    <string name="keep_service_noti_title">移除服务通知</string>
+
+    <string name="noApplications">找不到可用应用程序</string>
+
+    <string name="owner_name">机主</string>
+
+    <string name="apk_file_does_not_exists_please_provide_valid_file_path">Apk 文件不存在, 请提供有效的文件路径.</string>
+    <string name="broken_apk_file_please_select_another_apk_file">Apk 文件受损, 建议安装其他 apk 文件.</string>
+    <string name="not_allowed_to_update_package">当前更新策略阻止了此应用的更新.</string>
+    <string name="please_provide_apk_file_path">path = NULL, 请提供 apk 文件路径.</string>
+    <string name="unable_to_copy_package_file">无法复制应用文件.</string>
+    <string name="virtual_core_x64_engine_not_installed">需要安装64位引擎才能使用相关功能.</string>
+
+    <string name="virtual_installer">VirtualPackage Installer</string>
+</resources>

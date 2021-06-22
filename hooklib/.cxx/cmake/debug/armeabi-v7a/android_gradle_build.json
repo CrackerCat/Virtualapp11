@@ -1,0 +1,122 @@
+
+{
+	"buildFiles" : [ "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\86151\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"sandhook-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "sandhook",
+			"buildCommand" : "C:\\Users\\86151\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\armeabi-v7a --target sandhook",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/sandhook.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/trampoline/trampoline.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/trampoline/trampoline_manager.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/utils/dlfcn_nougat.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/utils/hide_api.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/utils/utils.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/utils/offset.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/utils/elf_util.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/casts/cast_art_method.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/casts/cast_compiler_options.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/art/art_method.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/art/art_compiler_options.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/inst/insts_arm32.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/inst/insts_arm64.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsandhook_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"src" : "D:/kaiyuan/VirtualApp11-master/hooklib/src/main/cpp/nativehook/native_hook.cpp",
+					"workingDirectory" : "D:/kaiyuan/VirtualApp11-master/hooklib/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "D:/kaiyuan/VirtualApp11-master/hooklib/build/intermediates/cmake/debug/obj/armeabi-v7a/libsandhook.so",
+			"toolchain" : "406222361"
+		}
+	},
+	"toolchains" : 
+	{
+		"406222361" : 
+		{
+			"cCompilerExecutable" : "C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/86151/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

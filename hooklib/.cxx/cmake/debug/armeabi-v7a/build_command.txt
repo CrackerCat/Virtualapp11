@@ -1,0 +1,15 @@
+Executable : C:\Users\86151\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HD:\kaiyuan\VirtualApp11-master\hooklib\src\main\cpp
+-BD:\kaiyuan\VirtualApp11-master\hooklib\.cxx\cmake\debug\armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-19
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\kaiyuan\VirtualApp11-master\hooklib\build\intermediates\cmake\debug\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=C:\Users\86151\AppData\Local\Android\Sdk\ndk\22.1.7171670
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\86151\AppData\Local\Android\Sdk\ndk\22.1.7171670\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\86151\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
+-GAndroid Gradle - Ninja
+-DCMAKE_BUILD_TYPE=Release
+jvmArgs : 
+

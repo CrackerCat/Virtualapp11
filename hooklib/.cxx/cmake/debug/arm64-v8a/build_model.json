@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\kaiyuan\\VirtualApp11-master",
+      "sdkFolder": "C:\\Users\\86151\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\build\\intermediates",
+      "gradleModulePathName": ":hooklib",
+      "moduleRootFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib",
+      "makeFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\kaiyuan\\VirtualApp11-master\\.cxx",
+      "cxxFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx",
+      "ndkFolder": "C:\\Users\\86151\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670",
+      "ndkVersion": "22.1.7171670",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DCMAKE_BUILD_TYPE\u003dRelease"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 19,
+  "cxxBuildFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a",
+  "jsonFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a",
+  "objFolder": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a",
+  "buildCommandFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a\\build_command.txt",
+  "buildOutputFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a\\build_output.txt",
+  "modelOutputFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\build_generation_state.json",
+    "cacheKeyFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a\\compile_commands.json"
+}

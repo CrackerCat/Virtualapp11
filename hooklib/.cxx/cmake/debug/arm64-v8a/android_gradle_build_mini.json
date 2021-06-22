@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\86151\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "sandhook_64-Release-arm64-v8a": {
+      "artifactName": "sandhook_64",
+      "buildCommand": "C:\\Users\\86151\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\kaiyuan\\VirtualApp11-master\\hooklib\\.cxx\\cmake\\debug\\arm64-v8a --target sandhook_64",
+      "abi": "arm64-v8a",
+      "output": "D:\\kaiyuan\\VirtualApp11-master\\hooklib\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libsandhook_64.so"
+    }
+  }
+}

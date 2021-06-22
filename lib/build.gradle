@@ -1,0 +1,156 @@
+apply plugin: 'com.android.library'
+
+
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 15
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 29
+
+        buildConfigField 'String', 'VA_VERSION_NAME', '"V' + rootProject.ext.VERSION + '"'
+        manifestPlaceholders = [
+                PERMISSION_PREFIX: rootProject.ext.PACKAGE_NAME_32BIT,
+                PERMISSION_REQUEST: rootProject.ext.PACKAGE_NAME_ARM64,//表示64 位权限请求的包名
+                AUTHORITY_PREFIX : rootProject.ext.PACKAGE_NAME_32BIT,
+                VA_VERSION       : '' + rootProject.ext.VERSION_CODE,
+        ]
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a"  //兼容Android 10
+        }
+    }
+    buildTypes {
+        debug {
+            jniDebuggable false
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../security/proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../security/proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+    packagingOptions { // 由于android的高斯模糊 需要一下的库，但是 64 位下面是不需要一下库的 ，所以在这里排除一下的库
+        // for renderscript
+        exclude 'lib/arm64-v8a/libRSSupport.so'
+        exclude 'lib/arm64-v8a/librsjni_androidx.so'
+        exclude 'lib/arm64-v8a/librsjni.so'
+
+        exclude 'lib/x86/libRSSupport.so'
+        exclude 'lib/x86/librsjni_androidx.so'
+        exclude 'lib/x86/librsjni.so'
+    }
+    lintOptions {
+        //IJobService need NewApi
+        abortOnError false
+        warning 'NewApi', 'OnClick', 'EllipsizeMaxLines'
+    }
+}
+gradle.taskGraph.afterTask { task ->
+    def TASK_NAME = "transformNativeLibsWithStripDebugSymbolFor"
+    def COPY_ABI_LIST = [
+            "lib/armeabi/",
+            "lib/armeabi-v7a/",
+    ]
+
+    def COPY_FOR_HOUDINI_ABI_LIST = [
+            "lib/x86/"
+    ]
+    if (task.name.startsWith(TASK_NAME)) {
+        println("performing lib64 transforming...")
+        String buildType = task.name.substring(TASK_NAME.length()).toLowerCase(Locale.US)
+        File root = new File(buildDir, "intermediates/transforms/stripDebugSymbol/${buildType}")
+
+        boolean useGFileUtils = false
+        try {
+            Class.forName("java.org.gradle.util.GFileUtils")
+            useGFileUtils = true
+        } catch (Exception ignore) {
+            // class removed after gradle 5.4.0
+        }
+
+        // 0\lib\arm64-v8a
+        for (File numberDir : root.listFiles()) {
+            if (!numberDir.isDirectory()) {
+                continue
+            }
+            File soDir = new File(numberDir, "lib/arm64-v8a")
+            for (File soFile : soDir.listFiles()) {
+                if (soFile.name.endsWith("_64.so")) {
+                    for (String abi : COPY_ABI_LIST) {
+                        def toFile = new File(numberDir, abi + soFile.name)
+                        if (!toFile.getParentFile().exists()) {
+                            continue
+                        }
+                        if (useGFileUtils) {
+                            GFileUtils.copyFile(soFile, toFile)
+                        } else {
+                            copy {
+                                from soFile
+                                into toFile.getParentFile()
+                            }
+                        }
+                    }
+                    for (String abi : COPY_FOR_HOUDINI_ABI_LIST) {
+                        def toFile = new File(numberDir, abi + soFile.name)
+                        toFile.getParentFile().mkdirs()
+                        toFile.createNewFile()
+                    }
+                    soFile.delete()
+                    println("delete : " + soFile.path)
+                }
+            }
+            soDir.delete()
+        }
+    }
+}
+
+android.libraryVariants.all { variant ->
+    if (variant.buildType.name == "release") {
+        def fileDir = project.rootDir.getAbsolutePath()+"/app/sdk/"
+        def fileName = "${project.name}.aar"
+        // 修改aar名称
+        variant.outputs.all { output ->
+            outputFileName = fileName
+        }
+        // 复制aar到指定目录
+        variant.assemble.doLast {
+            variant.outputs.all { output ->
+                copy {
+                    from output.outputFile
+                    into fileDir //+fileName
+                }
+                def commandLine = "cp -rf " + output.outputFile +" " +fileDir+fileName
+//                def cmdResult =commandLine.execute().text.trim();
+                println "拷贝完成看看文件路径 "+fileDir+fileName + "  output.outputFile : "+ output.outputFile.getAbsolutePath()+"    cmdResult :"+cmdResult +"   project ${project.name}"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    provided project(path: ':xposedcompat')
+    provided project(path: ':hooklib')
+    // sandhook
+//    api 'com.swift.sandhook:hooklib:4.1.5'
+//    api 'com.swift.sandhook:xposedcompat:4.1.5'
+    //api 'com.trend.lazyinject:lib:3.4.0-beta'
+    //annotationProcessor 'com.trend.lazyinject:compiler:3.4.0-beta'
+//    implementation 'com.github.megatronking.stringfog:xor:1.1.0'
+    //provided project(':xposedcompat')
+}
