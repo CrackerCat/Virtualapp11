@@ -1,0 +1,12 @@
+ext {
+    PACKAGE_NAME_32BIT = 'com.virtualapp'
+    PACKAGE_NAME_ARM64 = 'com.virtualapp.bit64'
+    PERMISSION_PREFIX = PACKAGE_NAME_32BIT
+    AUTHORITY64_PREFIX = PACKAGE_NAME_ARM64
+
+    VA_VERSION_64 = false
+
+    VERSION = '3.3.0'
+    VERSION_CODE = 180080914
+
+}
